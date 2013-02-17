@@ -25,6 +25,6 @@
  ******************************************************************************/
 
 #include "services_headers.h"
-#include "sysinfo.h"
+#include "cdv_sysinfo.h"
 #include "syslocal.h"
 
