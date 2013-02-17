@@ -358,16 +358,18 @@ int psb_kobject_uevent_init(void)
 					    NETLINK_PSB_KOBJECT_UEVENT,
 					    DRM_GFX_SOCKET_GROUPS,
 					    NULL, NULL, THIS_MODULE); */
+	struct netlink_kernel_cfg cfg = {
+		.groups = 0x3,
+		.flags = NL_CFG_F_NONROOT_SEND | NL_CFG_F_NONROOT_RECV,
+	};
 	uevent_sock = netlink_kernel_create(&init_net,
 					    NETLINK_PSB_KOBJECT_UEVENT,
-					    0x3, /* 3 is for hotplug & dpst */
-					    NULL, NULL, THIS_MODULE);
+					    &cfg);
 
 	if (!uevent_sock) {
 		printk(KERN_ERR "psb_kobject_uevent: failed create socket!\n");
 		return -ENODEV;
 	}
-	netlink_set_nonroot(NETLINK_PSB_KOBJECT_UEVENT, NL_NONROOT_RECV);
 
 	return 0;
 }
