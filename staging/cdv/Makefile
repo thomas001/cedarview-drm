@@ -19,7 +19,7 @@ include_dirs := \
         -I$(INCDIR)/bc_video \
         -I$(INCDIR)/imgv \
 	-Iinclude/linux \
-	-Iinclude/drm
+	-I$(KMYDIR)/include
 
  
 ccflags-y += $(include_dirs)
