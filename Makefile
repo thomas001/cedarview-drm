@@ -2,7 +2,12 @@
 # Makefile for the drm device driver.  This driver provides support for the
 # Direct Rendering Infrastructure (DRI) in XFree86 4.1.0 and higher.
 
-ccflags-y := -Iinclude/drm
+export CONFIG_STAGING=y
+export CONFIG_DRM_INTEL_CDV=m
+export CONFIG_DRM_CDV_RELEASE=y
+unexport CONFIG_DRM_PSB_CDV
+
+ccflags-y := -I$(KMYDIR)/include
 
 drm-y       :=	drm_auth.o drm_buffer.o drm_bufs.o drm_cache.o \
 		drm_context.o drm_dma.o \
@@ -24,16 +29,4 @@ CFLAGS_drm_trace_points.o := -I$(src)
 
 obj-$(CONFIG_DRM)	+= drm.o
 obj-$(CONFIG_DRM_TTM)	+= ttm/
-obj-$(CONFIG_DRM_TDFX)	+= tdfx/
-obj-$(CONFIG_DRM_R128)	+= r128/
-obj-$(CONFIG_DRM_RADEON)+= radeon/
-obj-$(CONFIG_DRM_MGA)	+= mga/
-obj-$(CONFIG_DRM_I810)	+= i810/
-obj-$(CONFIG_DRM_I915)  += i915/
-obj-$(CONFIG_DRM_SIS)   += sis/
-obj-$(CONFIG_DRM_SAVAGE)+= savage/
-obj-$(CONFIG_DRM_VMWGFX)+= vmwgfx/
-obj-$(CONFIG_DRM_VIA)	+=via/
-obj-$(CONFIG_DRM_NOUVEAU) +=nouveau/
-obj-$(CONFIG_DRM_EXYNOS) +=exynos/
-obj-y			+= i2c/
+obj-$(CONFIG_STAGING)	+= staging/
