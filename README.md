@@ -5,6 +5,15 @@ Yet another try to run Intel's cdv driver on newer kernels. Instead of patching 
 
 I only did basic patching, layout for drm backport is due to the cedarview-drm-drivers package's authors.
 
+Kernel versions
+---------------
+
+Currently the following kernel versions are tested:
+
+ * vanilla 3.7.8
+ * vanilla 3.4.32 --- *use `linux-3.5` branch*
+ * ubuntu's 3.5.0-23-generic --- *use `linux-3.5` branch*
+
 How to use
 ---------
 
