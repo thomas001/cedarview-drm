@@ -31,7 +31,7 @@
 #include <linux/errno.h>
 #include <linux/interrupt.h>
 
-#include <drm/drmP.h>
+#include "drmP.h"
 
 #include <asm/io.h>
 

@@ -61,7 +61,7 @@
 #include <linux/proc_fs.h>
 
 #if defined(SUPPORT_DRI_DRM)
-#include <drm/drmP.h>
+#include "drmP.h"
 #if defined(PVR_SECURE_DRM_AUTH_EXPORT)
 #include "env_perproc.h"
 #endif

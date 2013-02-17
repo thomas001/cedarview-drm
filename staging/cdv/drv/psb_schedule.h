@@ -19,7 +19,7 @@
 #ifndef _PSB_SCHEDULE_H_
 #define _PSB_SCHEDULE_H_
 
-#include <drm/drmP.h>
+#include "drmP.h"
 
 struct psb_context;
 

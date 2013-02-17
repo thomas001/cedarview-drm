@@ -17,7 +17,7 @@
  * Authors: Thomas Hellstrom <thomas-at-tungstengraphics.com>
  **************************************************************************/
 
-#include <drm/drmP.h>
+#include "drmP.h"
 #include "psb_drm.h"
 #include "psb_drv.h"
 #include "psb_reg.h"

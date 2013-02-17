@@ -48,7 +48,7 @@
 #include <asm/current.h>
 #endif
 #if defined(SUPPORT_DRI_DRM)
-#include <drm/drmP.h>
+#include "drmP.h"
 #endif
 
 #include "img_defs.h"

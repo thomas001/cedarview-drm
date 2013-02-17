@@ -27,9 +27,9 @@
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/slab.h>
-#include <drm/drmP.h>
-#include <drm/drm_core.h>
-#include <drm/drm_pciids.h>
+#include "drmP.h"
+#include "drm_core.h"
+#include "drm_pciids.h"
 #include <linux/spinlock.h>
 /**
  * event groups for routing to different user mode threads

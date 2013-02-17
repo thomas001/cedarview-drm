@@ -20,7 +20,7 @@
 #ifndef _PSB_GTT_H_
 #define _PSB_GTT_H_
 
-#include <drm/drmP.h>
+#include "drmP.h"
 
 #include "img_types.h"
 

@@ -23,9 +23,9 @@
 #define _PSB_FB_H_
 
 #include <linux/version.h>
-#include <drm/drmP.h>
+#include "drmP.h"
 
-#include <drm/drm_fb_helper.h>
+#include "drm_fb_helper.h"
 
 #include "psb_drv.h"
 

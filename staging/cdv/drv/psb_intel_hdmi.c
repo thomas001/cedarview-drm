@@ -24,10 +24,10 @@
  *	jim liu <jim.liu@intel.com>
  */
 
-#include <drm/drmP.h>
-#include <drm/drm.h>
-#include <drm/drm_crtc.h>
-#include <drm/drm_edid.h>
+#include "drmP.h"
+#include "drm.h"
+#include "drm_crtc.h"
+#include "drm_edid.h"
 #include "psb_intel_drv.h"
 #include "psb_drv.h"
 #include "psb_intel_reg.h"

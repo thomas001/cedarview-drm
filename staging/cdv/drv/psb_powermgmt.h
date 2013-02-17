@@ -30,7 +30,7 @@
 #define _PSB_POWERMGMT_H_
 
 #include <linux/pci.h>
-#include <drm/drmP.h>
+#include "drmP.h"
 
 #define OSPM_GRAPHICS_ISLAND	0x1
 #define OSPM_VIDEO_DEC_ISLAND	0x2

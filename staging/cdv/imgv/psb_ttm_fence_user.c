@@ -23,7 +23,7 @@
  * Authors: Thomas Hellstrom <thomas-at-tungstengraphics-dot-com>
  */
 
-#include <drm/drmP.h>
+#include "drmP.h"
 #include "psb_ttm_fence_user.h"
 #include "ttm/ttm_object.h"
 #include "psb_ttm_fence_driver.h"

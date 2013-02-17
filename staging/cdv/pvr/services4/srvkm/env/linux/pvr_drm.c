@@ -41,8 +41,8 @@
 #include <linux/proc_fs.h>
 #include <linux/sched.h>
 #include <asm/ioctl.h>
-#include <drm/drmP.h>
-#include <drm/drm.h>
+#include "drmP.h"
+#include "drm.h"
 
 #include "img_defs.h"
 #include "services.h"

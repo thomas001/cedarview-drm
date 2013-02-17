@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <drm/drmP.h>
+#include "drmP.h"
 
 #include "psb_intel_bios.h"
 #include "psb_drv.h"

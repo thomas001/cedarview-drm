@@ -22,8 +22,8 @@
 
 #include <linux/version.h>
 
-#include <drm/drmP.h>
-#include <drm/drm_crtc.h>
+#include "drmP.h"
+#include "drm_crtc.h"
 #include "sys_pvr_drm_export.h"
 #include "psb_drm.h"
 #include "psb_reg.h"

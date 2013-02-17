@@ -22,9 +22,9 @@
 
 #include <linux/i2c.h>
 #include <linux/dmi.h>
-/* #include <drm/drm_crtc.h> */
-/* #include <drm/drm_edid.h> */
-#include <drm/drmP.h>
+/* #include "drm_crtc.h" */
+/* #include "drm_edid.h" */
+#include "drmP.h"
 
 #include "psb_intel_bios.h"
 #include "psb_drv.h"

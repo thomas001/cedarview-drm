@@ -36,8 +36,8 @@
 #include <linux/dma-mapping.h>
 #endif
 
-#include <drm/drmP.h>
-#include <drm/drm.h>
+#include "drmP.h"
+#include "drm.h"
 #include "psb_drv.h"
 #include "ttm/ttm_bo_api.h"
 #include "ttm/ttm_placement.h"

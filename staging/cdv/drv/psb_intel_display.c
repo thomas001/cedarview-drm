@@ -21,7 +21,7 @@
 #include <linux/i2c.h>
 #include <linux/pm_runtime.h>
 
-#include <drm/drmP.h>
+#include "drmP.h"
 #include "psb_fb.h"
 #include "psb_drv.h"
 #include "psb_intel_drv.h"

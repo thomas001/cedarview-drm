@@ -21,7 +21,7 @@
 #include "ttm/ttm_placement.h"
 #include "ttm/ttm_execbuf_util.h"
 #include "psb_ttm_fence_api.h"
-#include <drm/drmP.h>
+#include "drmP.h"
 #include "psb_drv.h"
 #include "psb_schedule.h"
 

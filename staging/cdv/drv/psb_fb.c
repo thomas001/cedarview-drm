@@ -29,9 +29,9 @@
 #include <linux/init.h>
 #include <linux/console.h>
 
-#include <drm/drmP.h>
-#include <drm/drm.h>
-#include <drm/drm_crtc.h>
+#include "drmP.h"
+#include "drm.h"
+#include "drm_crtc.h"
 
 #include "psb_drv.h"
 #include "psb_intel_reg.h"

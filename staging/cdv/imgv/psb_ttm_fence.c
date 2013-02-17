@@ -28,7 +28,7 @@
 #include <linux/wait.h>
 #include <linux/sched.h>
 
-#include <drm/drmP.h>
+#include "drmP.h"
 
 /*
  * Simple implementation for now.

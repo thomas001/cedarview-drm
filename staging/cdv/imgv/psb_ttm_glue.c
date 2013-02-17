@@ -20,7 +20,7 @@
  **************************************************************************/
 
 
-#include <drm/drmP.h>
+#include "drmP.h"
 #include "psb_drv.h"
 #include "psb_ttm_userobj_api.h"
 #include <linux/io.h>

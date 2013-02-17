@@ -19,8 +19,8 @@
  *
  **************************************************************************/
 
-#include <drm/drmP.h>
-#include <drm/drm.h>
+#include "drmP.h"
+#include "drm.h"
 #include "psb_drm.h"
 #include "psb_drv.h"
 #include "psb_fb.h"
@@ -28,7 +28,7 @@
 #include "psb_intel_reg.h"
 #include "psb_intel_bios.h"
 #include "psb_msvdx.h"
-#include <drm/drm_pciids.h>
+#include "drm_pciids.h"
 #include "pvr_drm_shared.h"
 #include "psb_powermgmt.h"
 #include "img_types.h"

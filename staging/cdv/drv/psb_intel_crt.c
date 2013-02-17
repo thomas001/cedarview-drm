@@ -25,7 +25,7 @@
  */
 
 #include <linux/i2c.h>
-#include <drm/drmP.h>
+#include "drmP.h"
 
 #include "psb_intel_bios.h"
 #include "psb_drv.h"

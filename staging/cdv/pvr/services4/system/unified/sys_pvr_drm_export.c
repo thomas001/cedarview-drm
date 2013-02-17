@@ -24,8 +24,8 @@
  *
  ******************************************************************************/
 
-#include <drm/drmP.h>
-#include <drm/drm.h>
+#include "drmP.h"
+#include "drm.h"
 
 #include "pvr_drm_shared.h"
 

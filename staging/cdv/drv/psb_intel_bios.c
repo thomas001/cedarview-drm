@@ -18,8 +18,8 @@
  *    Eric Anholt <eric@anholt.net>
  *
  */
-#include <drm/drmP.h>
-#include <drm/drm.h>
+#include "drmP.h"
+#include "drm.h"
 #include "psb_drm.h"
 #include "psb_drv.h"
 #include "drm_dp_helper.h"
