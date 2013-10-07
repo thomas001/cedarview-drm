@@ -27,6 +27,9 @@
 #ifndef __SERVICES_PROC_H__
 #define __SERVICES_PROC_H__
 
+//#if (LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,22) && LINUX_VERSION_CODE < KERNEL_VERSION(3,10,0))
+//#include <asm/system.h>
+//#endif
 #include <linux/proc_fs.h>	
 #include <linux/seq_file.h> 
 
@@ -61,9 +64,9 @@ IMG_INT CreateProcEntries(IMG_VOID);
 
 IMG_INT CreateProcReadEntry (const IMG_CHAR * name, pvr_read_proc_t handler);
 
-IMG_INT CreateProcEntry(const IMG_CHAR * name, read_proc_t rhandler, write_proc_t whandler, IMG_VOID *data);
+IMG_INT CreateProcEntry(const IMG_CHAR * name, IMG_VOID* rhandler, IMG_VOID* whandler, IMG_VOID *data);
 
-IMG_INT CreatePerProcessProcEntry(const IMG_CHAR * name, read_proc_t rhandler, write_proc_t whandler, IMG_VOID *data);
+IMG_INT CreatePerProcessProcEntry(const IMG_CHAR * name, IMG_VOID* rhandler, IMG_VOID* whandler, IMG_VOID *data);
 
 IMG_VOID RemoveProcEntry(const IMG_CHAR * name);
 
@@ -87,7 +90,7 @@ struct proc_dir_entry* CreateProcEntrySeq (
 								pvr_show_proc_seq_t show_handler,
 								pvr_off2element_proc_seq_t off2element_handler,
 								pvr_startstop_proc_seq_t startstop_handler,
-								write_proc_t whandler
+								IMG_VOID* whandler
 							   );
 
 struct proc_dir_entry* CreatePerProcessProcEntrySeq (
@@ -97,7 +100,7 @@ struct proc_dir_entry* CreatePerProcessProcEntrySeq (
 								pvr_show_proc_seq_t show_handler,
 								pvr_off2element_proc_seq_t off2element_handler,
 								pvr_startstop_proc_seq_t startstop_handler,
-								write_proc_t whandler
+								IMG_VOID* whandler
 							   );
 
 
