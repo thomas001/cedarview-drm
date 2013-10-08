@@ -10,6 +10,7 @@ Kernel versions
 
 Currently the following kernel versions are tested:
 
+ * vanilla 3.10.14
  * vanilla 3.7.8
  * vanilla 3.4.32 --- *use `linux-3.5` branch*
  * ubuntu's 3.5.0-23-generic --- *use `linux-3.5` branch*
