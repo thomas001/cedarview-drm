@@ -60,7 +60,7 @@
 #include "mm.h"
 #include "pvr_debug.h"
 #include "osfunc.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "mutex.h"
 #include "handle.h"
 #include "perproc.h"

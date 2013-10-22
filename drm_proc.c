@@ -64,7 +64,7 @@ static struct drm_info_list drm_proc_list[] = {
 
 static int drm_proc_open(struct inode *inode, struct file *file)
 {
-	struct drm_info_node* node = PDE(inode)->data;
+	struct drm_info_node* node = PDE_DATA(inode);
 
 	return single_open(file, node->info_ent->show, node);
 }
@@ -118,7 +118,7 @@ int drm_proc_create_files(struct drm_info_list *files, int count,
 				       &drm_proc_fops, tmp);
 		if (!ent) {
 			DRM_ERROR("Cannot create /proc/dri/%s/%s\n",
-				  root->name, files[i].name);
+				  "<unknown proc entry>", files[i].name);
 			list_del(&tmp->list);
 			kfree(tmp);
 			ret = -1;

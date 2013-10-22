@@ -31,7 +31,7 @@
 #include "mutex.h"
 #include "syscommon.h"
 #include "pvr_debug.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "private_data.h"
 #include "linkage.h"
 #include "pvr_bridge_km.h"

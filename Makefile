@@ -4,6 +4,7 @@
 
 export CONFIG_STAGING=y
 export CONFIG_DRM_INTEL_CDV=m
+export CONFIG_DRM_TTM=m
 export CONFIG_DRM_CDV_RELEASE=y
 unexport CONFIG_DRM_PSB_CDV
 

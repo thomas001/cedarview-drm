@@ -32,7 +32,7 @@
 
 #ifdef __linux__
 #include <linux/kernel.h>
-#include "proc.h"
+/* #include "proc.h" */
 #endif
 
 #ifdef USE_BM_FREESPACE_CHECK

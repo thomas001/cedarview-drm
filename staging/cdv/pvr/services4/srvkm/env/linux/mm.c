@@ -52,7 +52,7 @@
 #include "mmap.h"
 #include "osfunc.h"
 #include "pvr_debug.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "mutex.h"
 #include "lock.h"
 

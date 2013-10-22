@@ -28,7 +28,7 @@
 #include "osperproc.h"
 
 #include "env_perproc.h"
-#include "proc.h"
+/* #include "proc.h" */
 
 extern IMG_UINT32 gui32ReleasePID;
 

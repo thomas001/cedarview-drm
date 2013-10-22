@@ -94,7 +94,7 @@
 #include "perproc.h"
 #include "handle.h"
 #include "pvr_bridge_km.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "pvrmodule.h"
 #include "private_data.h"
 #include "lock.h"
@@ -534,11 +534,11 @@ static int __init PVRCore_Init(void)
 
 	LinuxInitMutex(&gPVRSRVLock);
 
-	if (CreateProcEntries ())
-	{
-		error = -ENOMEM;
-		return error;
-	}
+	/* if (CreateProcEntries ()) */
+	/* { */
+	/* 	error = -ENOMEM; */
+	/* 	return error; */
+	/* } */
 
 	if (PVROSFuncInit() != PVRSRV_OK)
 	{
@@ -683,7 +683,7 @@ init_failed:
 	LinuxMMCleanup();
 	LinuxBridgeDeInit();
 	PVROSFuncDeInit();
-	RemoveProcEntries();
+	/* RemoveProcEntries(); */
 
 	return error;
 
@@ -760,7 +760,7 @@ static void __exit PVRCore_Cleanup(void)
 
 	PVROSFuncDeInit();
 
-	RemoveProcEntries();
+	/* RemoveProcEntries(); */
 
 	PVR_TRACE(("PVRCore_Cleanup: unloading"));
 }

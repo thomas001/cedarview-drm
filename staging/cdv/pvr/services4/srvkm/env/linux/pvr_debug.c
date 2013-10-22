@@ -44,7 +44,7 @@
 #include "servicesext.h"
 #include "pvr_debug.h"
 #include "srvkm.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "mutex.h"
 #include "linkage.h"
 

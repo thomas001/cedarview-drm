@@ -59,7 +59,7 @@
 #include "handle.h"
 #include "pvr_bridge_km.h"
 #include "pvr_bridge.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "pvrmodule.h"
 #include "pvrversion.h"
 #include "lock.h"

@@ -102,7 +102,6 @@ cedarview_gfx-y += $(ENVDIR)/osfunc.o \
 	  $(ENVDIR)/mmap.o \
 	  $(ENVDIR)/module.o \
 	  $(ENVDIR)/pdump.o \
-	  $(ENVDIR)/proc.o \
 	  $(ENVDIR)/pvr_bridge_k.o \
 	  $(ENVDIR)/pvr_debug.o \
 	  $(ENVDIR)/mm.o \

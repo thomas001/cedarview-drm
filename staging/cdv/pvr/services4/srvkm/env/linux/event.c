@@ -56,7 +56,7 @@
 #include "pvrmmap.h"
 #include "mmap.h"
 #include "env_data.h"
-#include "proc.h"
+/* #include "proc.h" */
 #include "mutex.h"
 #include "lock.h"
 #include "event.h"
