@@ -84,7 +84,7 @@ PVRSRV_ERROR OSPerProcessPrivateDataDeInit(IMG_HANDLE hOsPrivateData)
 	LinuxMMapPerProcessDisconnect(psEnvPerProc);
 
 	
-	RemovePerProcessProcDir(psEnvPerProc);
+	/* RemovePerProcessProcDir(psEnvPerProc); */
 
 	eError = OSFreeMem(PVRSRV_OS_NON_PAGEABLE_HEAP,
 				sizeof(PVRSRV_ENV_PER_PROCESS_DATA),
